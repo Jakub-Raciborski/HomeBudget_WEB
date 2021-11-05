@@ -8,14 +8,55 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
 	<link rel="stylesheet" href="style.css" type="text/css" />
 	
-	<script>
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital@1&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
 	
+	<script src="jquery-3.6.0.min.js"></script>
+	
+	<script>
+		$(document).ready(function() {
+		var NavY = $('.nav').offset().top;
+	 
+		var stickyNav = function(){
+		var ScrollY = $(window).scrollTop();
+		  
+		if (ScrollY > NavY) { 
+			$('.nav').addClass('sticky');
+		} else {
+			$('.nav').removeClass('sticky'); 
+		}
+		};
+	 
+		stickyNav();
+	 
+		$(window).scroll(function() {
+			stickyNav();
+		});
+		});
 	</script>
 </head>
 <body>
-	<div id="">
-		
+	<div class="container">
+		<div id="topHeader">
+			<div id="logo">
+				<div id="bigPartOfLogo">Home Budget</div>
+				<div id="smallPartOfLogo">Calculate your budget</div>
+			</div>
+			<div id="logInSmallMenu">Witaj, 
+				<a href="logowanie.html">zaloguj się</a> lub 
+				<a href="rejestracja.html">załóż konto</a>
+			</div>
+		</div>
+		<div class="nav">
+			<ol>
+				<li><a href="mainMenu.html">Main Menu</a></li>
+				<li><a href="addNewPosition.html">Add Revenue/Expense</a></li>
+				<li><a href="balance.html">Money Balance</a></li>
+			</ol>
+		</div>
+		<div id="contentBlock">
+			
+		</div>
+		<div id="footer">Home Budget &copy; 2021</div>
 	</div>
-	
 </body>
 </html>
