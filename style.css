@@ -51,8 +51,8 @@ a:active {
 	padding: 10px 0;
 	background-color: #829ca4;
 	text-align: center;
-	border-top: 1px solid #fff;
-	border-bottom: 1px solid #fff;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
 	color: #fff;
 }
 ol{
@@ -75,13 +75,6 @@ ol > li:first-child{
 }
 ol > li a{
 	color: #000 !important;
-}
-.sticky{
-	width: 100%;
-	position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 100;
 }
 #contentBlock{
 	margin: 0px 75px 0px 75px;
