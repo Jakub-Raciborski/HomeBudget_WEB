@@ -68,10 +68,10 @@ ol > li{
 	float: left;
 	width: 250px;
 	height: 40px;
-	border-right: 1px dashed #751b1b;
+	border-right: 1px dashed #000;
 }
 ol > li:first-child{
-	border-left: 1px dashed #751b1b;
+	border-left: 1px dashed #000;
 }
 ol > li a{
 	color: #000 !important;
@@ -89,4 +89,60 @@ ol > li a{
 	position: absolute;
 	bottom: 0;
 	width: 100%;
+}
+#logInBlock{
+	background-color: #fff;
+	width: 300px;
+	padding: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 100px;
+	-webkit-box-shadow: 3px 3px 30px 5px rgba(238,14,NaN,1);
+	-moz-box-shadow: 3px 3px 30px 5px rgba(238,14,NaN,1);
+	box-shadow: 3px 3px 30px 5px rgba(238,14,NaN,1);
+	border: 2px solid #000;
+}
+input[type=text],
+input[type=password]{
+	width: 300px;
+	background-color: #ccc;
+	color: #552;
+	border: 2px solid #555;
+	border-radius: 5px;
+	font-size: 20px;
+	padding: 2px;
+	box-sizing: border-box;
+	outline: none;
+	margin-bottom: 10px
+}
+input[type=text]:focus,
+input[type=password]:focus{
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(172,204,139,0.9);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(172,204,139,0.9);
+	box-shadow: 0px 0px 10px 2px rgba(172,204,139,0.9);
+	border: 2px solid #94be94;
+	color: #000;
+	background-color: #eee;
+}
+input[type=submit]{
+	width: 300px;
+	background-color: #14b01a;
+	font-size: 20px;
+	color: white;
+	padding: 15px 10px;
+	margin-top: 10px;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	letter-spacing: 2px;
+	outline: none;
+	margin-top: 20px;
+}
+input[type=submit]:focus{
+	-webkit-box-shadow: 0px 0px 15px 5px rgba(172,204,139,0.9);
+	-moz-box-shadow: 0px 0px 15px 5px rgba(172,204,139,0.9);
+	box-shadow: 0px 0px 15px 5px rgba(172,204,139,0.9);
+}
+input[type=submit]:hover{
+	background-color: #37b93d;
 }
