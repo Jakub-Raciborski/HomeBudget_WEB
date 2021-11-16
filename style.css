@@ -78,7 +78,7 @@ ol > li a{
 }
 #contentBlock{
 	margin: 0px 75px 0px 75px;
-	height: 100px;
+	min-height: 100px;
 }
 #footer{
 	font-family: 'Zen Antique Soft', serif;	
