@@ -35,7 +35,18 @@
 		<div id="contentBlock">
 			<form action="" method="post">
 				<div id="processingBlock">
-					
+					<div id="revenueExpenseChoice">
+						<label><input type="radio" name="revenueType" checked>Revenue</label>
+						<label><input type="radio" name="revenueType">Expense</label>
+					</div>
+						<label>Amount:	<input type="number" name="amount"></label>
+						<label>Date: <input type="date" name="newEntryDate"></label>
+						<select id="revenueChoice">
+							<option selected>Salary</option>
+							<option>Investment income</option>
+							<option>Online sales</option>
+							<option>Others</option>
+						</select>						
 				</div>
 			</form>
 		</div>
