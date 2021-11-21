@@ -11,7 +11,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital@1&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
 	
 	<script src="jquery-3.6.0.min.js"></script>
-	
 </head>
 <body>
 	<div class="container">
@@ -35,15 +34,34 @@
 		<div id="contentBlock">
 			<form action="" method="post">
 				<div id="processingBlock">
-					<label> Nick: <input type="text" name="userName"></label>
-					<label> Email: <input type="text" name="userEmail"></label>
-					<label> Password: <input type="password" name="userPassword"></label>
-					<label> Confirm password: <input type="password" name="passwordConfirmation"></label>
-					<input type="submit" value="Register">
+					<div id="revenueExpenseChoice">
+						<label><input type="radio" name="revenueType" checked id="radioRevenue" value="revenue">Revenue</label>
+						<label><input type="radio" name="revenueType" id="radioExpense" value="expense">Expense</label>
+					</div>
+						<label>Amount:	<input type="number" name="amount"></label>
+						<label>Date: <input type="date" name="newEntryDate"></label>
+						<div id="revenueAndExpenseOptions">
+							<div><label for="revenueChoice">Category:</label></div>
+							<select id="revenueChoice" class='categories'>
+								<option selected>Salary</option>
+								<option>Investment income</option>
+								<option>Online sales</option>
+								<option>Others</option>
+							</select>
+						</div>
+						<div class="row">
+							<div><label for="comment">Comment:</label></div>
+							<textarea name="comment" id="comment"></textarea>
+						</div>
+						<div class="row">
+							<input type="submit" value="Add" id="add">
+							<input type="submit" value="Cancel" id="cancel">
+						</div>
 				</div>
 			</form>
 		</div>
 		<div id="footer">Home Budget &copy; 2021</div>
 	</div>
+	<script src="scripts\revenueAndExpenseRadioButton.js"></script>
 </body>
 </html>
