@@ -11,6 +11,9 @@
 	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital@1&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
 	
 	<script src="jquery-3.6.0.min.js"></script>
+	<script>
+		
+	</script>
 	
 </head>
 <body>
@@ -41,12 +44,23 @@
 					</div>
 						<label>Amount:	<input type="number" name="amount"></label>
 						<label>Date: <input type="date" name="newEntryDate"></label>
-						<select id="revenueChoice">
-							<option selected>Salary</option>
-							<option>Investment income</option>
-							<option>Online sales</option>
-							<option>Others</option>
-						</select>						
+						<div id="revenueOptions">
+							<div><label for="revenueChoice">Category:</label></div>
+							<select id="revenueChoice">
+								<option selected>Salary</option>
+								<option>Investment income</option>
+								<option>Online sales</option>
+								<option>Others</option>
+							</select>
+						</div>
+						<div class="row">
+							<div><label for="comment">Comment:</label></div>
+							<textarea name="comment" id="comment"></textarea>
+						</div>
+						<div class="row">
+							<input type="submit" value="Add" id="add">
+							<input type="submit" value="Cancel" id="cancel">
+						</div>
 				</div>
 			</form>
 		</div>
