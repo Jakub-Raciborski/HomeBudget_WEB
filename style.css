@@ -242,3 +242,24 @@ input[type=number]:focus{
 	-moz-box-shadow: 0px 0px 15px 5px rgba(255,127,127,1);
 	box-shadow: 0px 0px 15px 5px rgba(255,127,127,1);
 }
+#menuContainer{
+	margin-left: auto;
+	margin-right: auto;
+	width: 500px;
+	margin-top: 50px;
+}
+#menuTextBlock{
+	width: 400px;
+	margin-left: auto;
+	margin-right: auto;
+}
+#greetings{
+	font-size: 35px;
+	text-align: center;
+	font-weight: bold;
+	margin-bottom: 20px;
+}
+#websiteDescription{
+	text-align: center;
+	font-weight: bold;
+}
