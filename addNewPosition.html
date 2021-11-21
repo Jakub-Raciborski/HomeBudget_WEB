@@ -11,10 +11,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital@1&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
 	
 	<script src="jquery-3.6.0.min.js"></script>
-	<script>
-		
-	</script>
-	
 </head>
 <body>
 	<div class="container">
@@ -39,14 +35,14 @@
 			<form action="" method="post">
 				<div id="processingBlock">
 					<div id="revenueExpenseChoice">
-						<label><input type="radio" name="revenueType" checked>Revenue</label>
-						<label><input type="radio" name="revenueType">Expense</label>
+						<label><input type="radio" name="revenueType" checked id="radioRevenue" value="revenue">Revenue</label>
+						<label><input type="radio" name="revenueType" id="radioExpense" value="expense">Expense</label>
 					</div>
 						<label>Amount:	<input type="number" name="amount"></label>
 						<label>Date: <input type="date" name="newEntryDate"></label>
-						<div id="revenueOptions">
+						<div id="revenueAndExpenseOptions">
 							<div><label for="revenueChoice">Category:</label></div>
-							<select id="revenueChoice">
+							<select id="revenueChoice" class='categories'>
 								<option selected>Salary</option>
 								<option>Investment income</option>
 								<option>Online sales</option>
@@ -66,5 +62,6 @@
 		</div>
 		<div id="footer">Home Budget &copy; 2021</div>
 	</div>
+	<script src="scripts\revenueAndExpenseRadioButton.js"></script>
 </body>
 </html>
