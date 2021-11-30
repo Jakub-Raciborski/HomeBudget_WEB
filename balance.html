@@ -1,0 +1,131 @@
+<!DOCTYPE HTML>
+<html lang="pl">
+<head>
+	<meta charset ="utf-8"/>
+	<title>Home Budget</title>
+	<meta name="description" content="Home Budget Program"/>
+	<meta name ="keywords" content="budget, expense, money, gold"/>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital@1&family=Zen+Antique+Soft&display=swap" rel="stylesheet">
+	
+	<script src="jquery-3.6.0.min.js"></script>
+	
+</head>
+<body>
+	<div class="container">
+		<div id="topHeader">
+			<div id="logo">
+				<div id="bigPartOfLogo">Home Budget</div>
+				<div id="smallPartOfLogo">Calculate your budget</div>
+			</div>
+			<div id="logInSmallMenu">Hello, 
+				<a href="login.html">log in</a> or 
+				<a href="register.html">register</a>
+			</div>
+		</div>
+		<div class="nav">
+			<ol>
+				<li><a href="mainMenu.html">Main Menu</a></li>
+				<li><a href="addNewPosition.html">Add Revenue/Expense</a></li>
+				<li><a href="balance.html">Money Balance</a></li>
+			</ol>
+		</div>
+		<div id="contentBlock">
+			<form action="" method="post">
+				<div id="balanceProcessingBlock">
+					<div id="timeIntervalLabel"><label for="timeInterval">Time interval for the money balance:</label></div>
+					<select id="timeInterval" class='categories'>
+						<option selected>Current month</option>
+						<option>Last month</option>
+						<option>Current month</option>
+						<option>Choose dates</option>
+					</select>
+					<div id="datesSelector"></div>
+					<div id="revenueBalance" class="list">
+						<div><label for="revenueTable">Revenues:</label></div>
+						<div id="revenuesList">
+							<table>
+								  <tr>
+									<th>Date</th>
+									<th>Revenue type</th>
+									<th>Amount</th>
+									<th>Comment</th>
+								  </tr>
+								  <tr>
+									<td>DD.MM.YYYY</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+								  </tr><tr>
+									<td>DD.MM.YYYY</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+								  </tr><tr>
+									<td>DD.MM.YYYY</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+								  </tr><tr>
+									<td>DD.MM.YYYY</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+								  </tr><tr>
+									<td>DD.MM.YYYY</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+								  </tr>
+							</table> 
+						</div>
+					</div>
+					<div id="expenseBalance" class="list">
+						<div><label for="expensesList">Expenses:</label></div>
+						<div id="expensesList">
+							<table>
+								  <tr>
+									<th>Date</th>
+									<th>Expense type</th>
+									<th>Amount</th>
+									<th>Comment</th>
+								  </tr>
+								  <tr>
+									<td>DD.MM.YYYY</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+								  </tr><tr>
+									<td>DD.MM.YYYY</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+								  </tr><tr>
+									<td>DD.MM.YYYY</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+								  </tr><tr>
+									<td>DD.MM.YYYY</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+								  </tr><tr>
+									<td>DD.MM.YYYY</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+									<td>Placeholder</td>
+								  </tr>
+							</table> 		
+						</div>
+					</div>
+					<div class="clearBox"></div>
+				</div>
+			</form>
+		</div>
+		<div id="footer">Home Budget &copy; 2021</div>
+	</div>
+</body>
+</html>
