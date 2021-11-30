@@ -275,6 +275,9 @@ input[type=number]:focus{
 	text-align: center;
 	font-weight: bold;
 }
+#datesSelector{
+	margin-left: 25px;
+}
 .clearBox{
 	clear: both;
 }
@@ -314,4 +317,11 @@ td{
 	border: 1px solid black;
 	padding: 3px;
 	text-align: left;
+}
+.chooseDateTile{
+	float: left;
+	width: 500px;
+}
+#lastDayBalanceChooseTile{
+	margin-left: 25px;
 }
