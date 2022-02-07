@@ -13,7 +13,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
 
-	<link rel="stylesheet" href="style-new.css" type="text/css" />
+	<link rel="stylesheet" href="style.css" type="text/css" />
 	<script src="https://kit.fontawesome.com/4a361a2edc.js" crossorigin="anonymous"></script>
 	<script>
 
@@ -46,7 +46,9 @@
 							class="sr-only">(current)</span></a>
 					<a class="nav-item px-lg-3 nav-link" href="mainMenu.html">Main Menu<span
 							class="sr-only">(current)</span></a>
-					<a class="nav-item px-lg-3 nav-link" href="addNewPosition.html">Add Revenue/Expense<span
+					<a class="nav-item px-lg-3 nav-link" href="addRevenue.html">Add Revenue<span
+							class="sr-only">(current)</span></a>
+					<a class="nav-item px-lg-3 nav-link" href="addExpense.html">Add Expense<span
 							class="sr-only">(current)</span></a>
 					<a class="nav-item px-lg-3 nav-link" href="balance.html">Money Balance<span
 							class="sr-only">(current)</span></a>
@@ -54,23 +56,11 @@
 			</div>
 		</div>
 	</nav>
-	
+
 	<section id="contact" class="contact bg-dark border text-light w-50 p-5">
 		<div class="addNewEnter py-5">
-			<p class="display-2 pb-lg5 text-uppercase text-center">Add</p>
+			<p class="display-2 pb-lg5  text-center">Add New Revenue</p>
 			<form action="" method="post">
-				<div id="revenueExpenseChoice" class="revenueExpenseChoice">
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="newEntryType" id="radioRevenue"
-							value="revenue" checked>
-						<label class="form-check-label" for="radioRevenue">Revenue</label>
-					</div>
-					<div class="form-check form-check-inline">
-						<input class="form-check-input" type="radio" name="newEntryType" id="radioExpense"
-							value="expense">
-						<label class="form-check-label" for="radioExpense">Expense</label>
-					</div>
-				</div>
 				<div class="form-group mb-2">
 					<label for="amount">Amount:</label>
 					<input id="amount" type="number" class="form-control">
@@ -79,16 +69,14 @@
 					<label for="newEntryDate">Date:</label>
 					<input type="date" name="newEntryDate">
 				</div>
-				<div id="revenueAndExpenseOptions">
-					<div class="form-group mb-2">
-						<label for="revenueType">Category:</label>
-						<select id="revenueType" class="selectMenu form-select" aria-label="Default select example">
-							<option selected>Salary</option>
-							<option>Investment income</option>
-							<option>Online sales</option>
-							<option>Others</option>
-						</select>
-					</div>
+				<div class="form-group mb-2">
+					<label for="revenueType">Category:</label>
+					<select id="revenueType" class="selectMenu form-select" aria-label="Default select example">
+						<option selected>Salary</option>
+						<option>Investment income</option>
+						<option>Online sales</option>
+						<option>Others</option>
+					</select>
 				</div>
 				<div class="form-group mb-5">
 					<label for="commentArea">Comment:</label>
@@ -96,7 +84,7 @@
 						placeholder="Place for additional information.">
 				</div>
 				<div class="text-center">
-					<input type="submit" value="Register" class="submit-btn px-4 py-3">
+					<input type="submit" value="Add" class="submit-btn px-4 py-3">
 				</div>
 			</form>
 		</div>
