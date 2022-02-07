@@ -1,6 +1,7 @@
 $("#timeInterval").change(function () {
-    var selectedOption = $("#timeInterval :selected").text();
-    if(selectedOption=="Choose dates") {
+    let selectedOption = $("#timeInterval :selected").text();
+    if(selectedOption=="Select a date") {
+		alert("test");
 		let selectON = '<div class="chooseDateTile">' +
 						'<div><label for="firstBalanceDay">First day:</label></div>' +
 						'<div><input id="firstBalanceDay" type="date" name="newEntryDate"></div>' +
